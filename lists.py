@@ -39,3 +39,28 @@ sorted(weights)
 
 # sorting in reverse order
 sorted(weights, reverse=True)
+
+# join method
+# takes an iterable of string values ie a list of string values and joins
+# a string b/w each item of the list.
+# o/p is a new string
+# note: iterables shud be string values.
+
+# Examples:
+
+email = ['jissmon', 'gmail.com']
+after_join = "@".join(email)
+print(after_join)
+
+
+def jointhem(data):
+    after_join = "-".join(data)
+    return after_join
+
+
+data = ['4589', '7278', '5673', '5934']
+phone = jointhem(data)
+print(phone)
+
+
+

@@ -32,26 +32,26 @@
 #         print(amount)
 
 #
-# class Player:
-#     def __init__(self, name, position, curr_skill_per):
-#         self.name = name
-#         self.position = position
-#         self.curr_skill_per = curr_skill_per
-#
-#     def status(self):
-#         matches_played = int(input('Enter no of matches: '))
-#         if matches_played > 10:
-#             self.curr_skill_per += (self.curr_skill_per * matches_played) / 100
-#             print(self.curr_skill_per)
-#         else:
-#             self.curr_skill_per -= (self.curr_skill_per * matches_played) / 100
-#             print(self.curr_skill_per)
-#
-#     def full_data(self):
-#         print(self.name, self.position, self.curr_skill_per)
-#
-#
-# player1 = Player('Hazard', 'LW', 70)
+class Player:
+    def __init__(self, name, position, curr_skill_per):
+        self.name = name
+        self.position = position
+        self.curr_skill_per = curr_skill_per
+
+    def status(self):
+        matches_played = int(input('Enter no of matches: '))
+        if matches_played > 10:
+            self.curr_skill_per += (self.curr_skill_per * matches_played) / 100
+            print(self.curr_skill_per)
+        else:
+            self.curr_skill_per -= (self.curr_skill_per * matches_played) / 100
+            print(self.curr_skill_per)
+
+    def full_data(self):
+        print(self.name, self.position, self.curr_skill_per)
+
+
+player1 = Player('Hazard', 'LW', 70)
 #
 #
 # class Identity:
