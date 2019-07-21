@@ -67,7 +67,7 @@ for match in matches:
 # # so here, output is like,
 # <re.Match object; span=(66, 68), match='Ha'>
 # <re.Match object; span=(69, 71), match='Ha'>
-# here two Ha has word boundaries before that
+# here two Ha has word boundaries before it.
 
 # to search for pattern that has no word boudary use \B
 pattern = re.compile(r'\BHa')
@@ -75,4 +75,25 @@ matches = pattern.finditer(text_to_search)
 for match in matches:
     print(match)
     # print(match)
+
+# Search and group method
+# examples
+import re
+
+pattern = re.compile(r'\d{3}\*\d{3}\*\d{3}')
+match = pattern.search(text_to_search).group()
+print(match)
+
+# here v use search method to seearch for the pattern in the string.
+# if not used group() method it returns an regex object,
+# so to return actual match we use group().
+# here need to use the backslash bfore *
+
+
+# Example 2
+pattern = re.compile(r'\d{3}\.\d{3}\.\d{3}')
+match = pattern.search(text_to_search).group()
+print(match)
+# here need to use a backslash bfore for each '.'
+# then only match is found.
 
