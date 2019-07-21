@@ -91,9 +91,130 @@ print(match)
 
 
 # Example 2
-pattern = re.compile(r'\d{3}\.\d{3}\.\d{3}')
+pattern = re.compile(r'\d{3}\.\d{3}\.\d{3,}')
 match = pattern.search(text_to_search).group()
 print(match)
 # here need to use a backslash bfore for each '.'
 # then only match is found.
 
+
+# ^ -caret symbol
+# to match the begining of a string.
+import re
+
+sentence = 'Start a sentence and then bring it to an end'
+pattern = re.compile(r'^Start')
+match = pattern.search(sentence)
+if match:
+    print(match)
+else:
+    print('no match')
+
+# here it prints the match since sentence starts with 'Start'
+
+# below code returns no match since v search for pattern 'sen' which is not the begining of sentence.
+import re
+
+sentence = 'Start a sentence and then bring it to an end'
+pattern = re.compile(r'^sen')
+match = pattern.search(sentence)
+if match:
+    print(match)
+else:
+    print('no match')
+
+# $ -dollar symbol
+# to search for a match at end of the string.
+sentence = 'Start a sentence and then bring it to an end'
+pattern = re.compile(r'^end$')
+match = pattern.findall(sentence)
+if match:
+    print(match)
+else:
+    print('no match')
+
+
+# Checking Vallid data or not
+def is_valid_time(date):
+    pattern = re.compile(r'^\d{2}:\d{2}$')
+    match = pattern.search(date)
+    if match:
+        return True
+    else:
+        return False
+
+
+ans = is_valid_time("22:23")
+print(ans)
+
+
+# Checking valid name or not
+def is_valid_name(name):
+    pattern = re.compile(r'^[Mr\.|Mrs\.]\D{1,}HOD$')
+    match = pattern.search(name)
+    if match:
+        print(match.group())
+        return True
+    return False
+
+
+print(is_valid_name('Mrs.Jissmon Jose, HOD'))
+
+# here v use, [] and place Mr. and Mrs. in it.
+# it means name shud start with either one of the following.
+
+# parsing the date
+import re
+
+date_dict = {}
+data_lst = ['d', 'm', 'y']
+keys = []
+vals = []
+
+
+def parse_date(date):
+    global date_dict, data_lst, keys, vals
+    pattern = re.compile(r'^\d{2}[-.,/]\d{2}[-,./]\d{4}$')
+    match = pattern.search(date)
+
+    if match:
+        match=str(match.group())
+        dt_split = match.split('.')
+        for w in data_lst:
+            for n in dt_split:
+                for key, val in date_dict.items():
+                    keys.append(key)
+                    vals.append(val)
+                if w not in keys and n not in vals:
+                    date_dict.update({w: n})
+        return date_dict
+    return None
+
+
+ans = parse_date("12.04.2005")
+print(ans)
+
+# Sample Programs
+
+# data = dict(name='jissmon', age='20')
+data2 = ['job', 'salary']
+data3 = ['asst', 4000]
+for i in data2:
+    for j in data3:
+        print(f"{i}:{j}")
+#         data.update({i:j})
+# print(data)
+
+data = dict(name='jissmon', age='20')
+data2 = ['job', 'salary']
+data3 = ['asst', 4000]
+keys = []
+vals = []
+for i in data2:
+    for j in data3:
+        for key, val in data.items():
+            keys.append(key)
+            vals.append(val)
+        if i not in keys and j not in vals:
+            data.update({i: j})
+print(data)

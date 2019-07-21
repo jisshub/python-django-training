@@ -23,7 +23,7 @@ match = pattern.findall(sentence)
 print(match)
 
 # here v find a pattern 'a' from the 'sentence'.
-# result will be in a list of 'a'.
+# Note: findall method returns a list as the result
 # in case pattern doesnt have match it returns an empty list
 
 
@@ -45,13 +45,13 @@ for match in matches:
 # matching a url
 
 url = 'Traversymedia.com'
-pattern = re.compile('Traversymedia.com')
+pattern = re.compile('Traversymedia\.com')
 match = pattern.findall(url)
 print(match)
 
 # matching a email id
 email = 'jissmon@gmail.com'
-pattern = re.compile('jissmon@gmail.com')
+pattern = re.compile('jissmon@gmail\.com')
 # match = pattern.findall(email)
 # print(match)
 
