@@ -1,0 +1,13 @@
+findall() -- returns a list of matches. if no match returns an empty list.
+finditer() -- returns a match object. to get the exact match use group() after it.
+    eg: pattern.finditer(string).group()
+search() -- returns a match object. to get the exact match use group() after it.
+re.compile() -- to input the pattern to be searched for.
+
+
+
+[Mr\.|Mrs\.] -- it means name shud start with either one of the following.
+
+
+
+

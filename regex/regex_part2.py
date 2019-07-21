@@ -163,7 +163,7 @@ print(is_valid_name('Mrs.Jissmon Jose, HOD'))
 # here v use, [] and place Mr. and Mrs. in it.
 # it means name shud start with either one of the following.
 
-# parsing the date
+# Parsing the Date
 import re
 
 date_dict = {}
@@ -178,8 +178,8 @@ def parse_date(date):
     match = pattern.search(date)
 
     if match:
-        match=str(match.group())
-        dt_split = match.split('.')
+        match = str(match.group())
+        dt_split = re.split(r'\W', match)
         for w in data_lst:
             for n in dt_split:
                 for key, val in date_dict.items():
