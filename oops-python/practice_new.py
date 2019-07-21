@@ -41,3 +41,4 @@ class Juniour_Asst(Senior_Asst, Jobs):
 
 
 adharsh = Juniour_Asst(30000)
+#
