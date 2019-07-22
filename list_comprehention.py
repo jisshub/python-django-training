@@ -24,11 +24,43 @@ print(new)
 
 # one away edit
 
+# find all numbers that r divible by 7
+
+mod7 = [each for each in range(1, 1000) if each % 7 is 0]
+print(mod7)
+
+# fin all numbers that have 3 in them
+
+return3 = [num for num in range(1, 100) if '3' in str(num)]
+print(return3)
+
+# example4
+nums = list('385638')
+d = [each for each in nums]
+print(d)
+
+# remove all vowels in a string
+consonants = [each for each in 'jissmon'.upper() if each not in 'AEIOU']
+print(consonants)
+
+# to create a (letter, number) pair
+number = list('56789')
+letter = ['A', 'B', 'C', 'D', 'E']
+new = [(each, each2) for each in number for each2 in letter]
+print(new)
+
+# return the intersection of two list
+num1 = [1, 2, 3, 4]
+num2 = [3, 4, 5, 6]
+new = [n for n in num1 for n2 in num2 if n is n2]
+print(new)
 
 
+# reverse and change case
+
+def new(names):
+    new = [name[::-1].lower() for name in names]
+    return new
 
 
-
-
-
-
+print(new(['Jiss', 'Jose', 'Ajith']))
