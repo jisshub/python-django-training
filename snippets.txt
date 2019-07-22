@@ -1,0 +1,3 @@
+use slice to reverse a string 
+	eg: name='jissmon'
+	    name[::-1]
