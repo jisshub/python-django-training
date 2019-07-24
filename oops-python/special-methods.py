@@ -80,6 +80,63 @@ class Person:
 
 per1 = Person('sjl', 5.6, 11)
 
+
 # it shows error when we do
 #         print(per1)
 # since v return a height which is an integer type.
+
+
+# __len__() method
+
+class Person:
+    def __init__(self, height):
+        self.height = height
+
+    def __len__(self):
+        return self.height
+
+
+p1 = Person(30)
+
+print(len(p1))
+
+
+# Example
+
+class Humans:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def __repr__(self):
+        return f"Name is {self.name}"
+
+    def __len__(self):
+        return f"age is {self.age}"
+
+    def __add__(self, other):
+        return self.age + other.age
+
+
+h1 = Humans('adsd', 30)
+h2 = Humans('ada', 40)
+
+
+# when v do len(p1), the special method len is invoked and return  the value specified
+
+
+class Human:
+    def __init__(self, name):
+        self.name = name
+
+    def __repr__(self):
+        return self.name
+
+
+h1 = Human('colt')
+print(h1)
+
+# repr gives string represention of object while it is printed
+# similar to str method
+
+
