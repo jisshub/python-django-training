@@ -138,5 +138,3 @@ print(h1)
 
 # repr gives string represention of object while it is printed
 # similar to str method
-
-

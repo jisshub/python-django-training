@@ -26,3 +26,6 @@ for each in sorted(std, key=lambda k: k.total):
 
 
 
+
+
+

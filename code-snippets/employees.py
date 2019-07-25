@@ -54,3 +54,7 @@ name_sorted = sorted(emp, key=lambda s: s.sal)
 for e in name_sorted:
     print(e)
 # print(name_sorted)
+
+
+
+

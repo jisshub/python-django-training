@@ -3,5 +3,3 @@
 sample_dir/movies
 sample_dir/movies_2
 filesio/*.txt
-venv/
-.idea/

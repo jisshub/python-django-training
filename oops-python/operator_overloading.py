@@ -31,7 +31,8 @@ class Books:
 
 b1 = Books(300)
 b2 = Books(400)
-print(b1 + b2)
+add = b1 + b2
+print(type(add))
 
 
 # here while v perfrom '+' operation of two objects,
@@ -77,10 +78,7 @@ add = b1 + b2 + b3
 print(add)
 print(type(add))
 
-
 # here v initially perform b1 + b2 and later add it with b3
 # it returns error since b1+b2 is an int type and v add it with an object type b3
 # so we add first two objects and later add it  with third object and finally convert it to an object type
 # Thus v can add all three together.
-
-
