@@ -1,0 +1,30 @@
+mysql -u root -p 
+
+-u means user
+-p password
+
+>show databases;
+>create f
+>use databasename;
+
+
+KEYS: PRIMARY KEY: to identify each records unique.
+      foregin key: to refer a table using a columnname from another table.
+
+
+
+normalisation : to avoid redundancy;
+
+
+
+truncate table employee_tbl;    -- remove values from the tables.
+
+
+drop table tabslename ---delete the tables.
+
+
+
+
+
+
+ 

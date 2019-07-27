@@ -26,6 +26,9 @@ class Makan(Appachan, Ammachi):
         return self.eyecolor
 
 
+Appachan('dadad', 'dadad')
+
+
 # to inherit the attributes of class Ammachi, v can define another method instead of init method,
 # and call it explicitly.
 
@@ -127,5 +130,3 @@ class Handbag(SchoolBag):
         self.price = price
         self.color = color
         return f"{self.price} and {self.color}"
-
-

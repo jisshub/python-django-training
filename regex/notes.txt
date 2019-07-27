@@ -5,9 +5,18 @@ search() -- returns a match object. to get the exact match use group() after it.
 re.compile() -- to input the pattern to be searched for.
 
 
-
 [Mr\.|Mrs\.] -- it means name shud start with either one of the following.
 
-
-
+>> getting value instead of iterator object using lambda functions.
+> text = 'jissmon23jose56'
+>>> import re
+>>> re.compile(r'\d+')
+re.compile('\\d+')
+>>> pattern = re.compile(r'\d+')
+>>> match = re.finditer(pattern, text)
+>>> match
+<callable_iterator object at 0x7f23c52f8f90>
+>>> new = list(map(lambda x:x.group(), match))
+>>> new
+['23', '56']
 
