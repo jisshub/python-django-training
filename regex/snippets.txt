@@ -5,9 +5,7 @@
 \W      - Not a Word Character
 \s      - Whitespace (space, tab, newline)
 \S      - Not Whitespace (space, tab, newline)
-print(sort_it)
-# for name in sort_it:
-#     print(name[1])
+
 \b      - Word Boundary
 \B      - Not a Word Boundary
 ^       - Beginning of a String
