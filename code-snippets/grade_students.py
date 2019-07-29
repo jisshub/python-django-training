@@ -1,6 +1,6 @@
 def student_grade(grade):
-    val = 0
     for each_gr in grade:
+        val = 0
         if each_gr >= 38:
             while (each_gr + val) % 5 is not 0:
                 val += 1
