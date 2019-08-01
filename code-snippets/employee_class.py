@@ -8,7 +8,6 @@ class Employee:
     def __str__(self):
         return self.name
 
-unt
 emp_file = open('employee.txt')
 # data1 = []
 emp_list = []

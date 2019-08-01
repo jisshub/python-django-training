@@ -7,4 +7,6 @@ venv/
 .idea/
 python-mysql.jpeg
 code-snippets/sample_dir/movies_data_corrected_new
+!code-snippets/txt-csv/employees.csv
+
 
