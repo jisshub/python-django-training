@@ -27,4 +27,12 @@ drop table tabslename ---delete the tables.
 
 
 
- 
+
+
+type of query language:
+DDL -- CREATE , ALTER , DROP
+DML -- SELECT \, INSERT, DELETE
+DCL --grant, revoke
+
+
+
