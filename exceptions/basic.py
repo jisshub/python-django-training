@@ -20,3 +20,11 @@ except Exception as e:
 finally:
     print('no')
 
+num = [2, 3, 4]
+try:
+    num.append(4, 5)
+except Exception as e:
+    # print('cant append a multiple objects to oather list')
+    print(e.args)
+finally:
+    print('hello')
