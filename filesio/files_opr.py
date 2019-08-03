@@ -33,9 +33,9 @@
 # next opening a file using context managers.
 # to use context managers, v use with keywrd.
 # n need to close the file explicitly
-#
-# with open('sample_dir/text.txt') as file:
-#     print(file.read())
+
+with open('sample_dir/text.txt') as file:
+    print(file.read())
 
 # benefit of using this context managers is they allow us to work with in the block
 # and after we exit that block it automatically close the file.
@@ -43,12 +43,12 @@
 # also closes the file if exceptions are thrown.
 
 # to read contents line by line.
-# with open('sample_dir/text.txt') as file:
-#     f_contents = file.readline()
-#     print(f_contents)
-#     # print(f_contents)
-#     f_contents = file.readline()
-#     print(f_contents)
+with open('sample_dir/text.txt') as file:
+    f_contents = file.readline()
+    print(f_contents)
+    # print(f_contents)
+    f_contents = file.readline()
+    print(f_contents)
 
 # evry time v read from file it reads the next line from the file.
 # bt here print stmt ends with a new line character
