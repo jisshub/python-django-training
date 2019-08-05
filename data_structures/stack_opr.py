@@ -1,6 +1,7 @@
 # Stack Operation in Python
 
 class Stack:
+
     def __init__(self, size):
         self.stack_size = size
         self.empty = list()
