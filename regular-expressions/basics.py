@@ -101,3 +101,14 @@ x = '\W'
 match = re.finditer(x, 'sadada3423&&&(()')
 for each in match:
     print(each.group())
+
+# data = ['jiss', 'john', 'kumar']
+# import re
+#
+# re.finditer(data, )
+#
+# data = []
+#
+# data.append(4)
+#
+# print(data)

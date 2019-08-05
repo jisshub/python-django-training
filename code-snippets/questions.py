@@ -18,6 +18,8 @@ numbers = list(range(17, 24))
 shuffled = rotate_array(numbers)
 print(shuffled)
 
+# import random
+
 # question 2:
 # given a list
 # [1,2,3,4,5]
@@ -25,6 +27,8 @@ print(shuffled)
 # retrieve all possible sets of numbers whose sum is 6.
 # {2,4}, {1,5}, {4,2}, {5,1}
 # [1,2,3,4,5]
+
+
 sum_list = []
 
 
@@ -39,12 +43,8 @@ def sum_all(numbers):
 
 print(sum_all([1, 2, 3, 4, 5, 6]))
 
-
-
-
 # for i in range(1, 4):
 #     for j in range(2, 5):
 #         print([i, j])
 #         if i + j == 6:
 #             print(f"output is, {[i, j]}")
-
