@@ -30,6 +30,7 @@ def migratory_birds(size):
         key_lst.append(keys)
     print(val_lst, key_lst)
     # if set(val_lst)
+    # check whther duplicates in list
     if len(val_lst) != len(set(val_lst)):
         ind = val_lst.index(max(val_lst))
         max_type = key_lst[ind]
