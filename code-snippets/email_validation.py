@@ -10,7 +10,7 @@ def email_validate(email):
         print(err.args)
 
 
-print(email_validate('jissmon476@.com'))
+print(email_validate('jissmon476@gmail.com'))
 
 # pattern = re.compile(r'(Mr\.| Mr\.)\s[a-zA-z]+')
 # match = pattern.search('Mr. Jiss')
