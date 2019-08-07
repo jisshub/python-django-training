@@ -28,7 +28,7 @@ def migratory_birds(size):
         # print(key, value)
         val_lst.append(values)
         key_lst.append(keys)
-    print(val_lst, key_lst)
+    print(key_lst, val_lst)
     # if set(val_lst)
     # check whther duplicates in list
     if len(val_lst) != len(set(val_lst)):
