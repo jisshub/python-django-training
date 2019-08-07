@@ -1,5 +1,5 @@
 # multitasking -- Performing multiple tasks at a time.
-# multitaksing is achived thru multithreading and multiprocessing.
+# multitasking is achived thru multithreading and multiprocessing.
 
 
 # to do threading in python

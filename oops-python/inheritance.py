@@ -16,7 +16,23 @@ class Cat(Animal):
 
 # an1 = Animal('dad')
 
+class Hello:
+    def run(self):
+        for each in range(4):
+            print('hello')
 
+
+class Hi:
+    def run(self):
+        for each in range(4):
+            print('hi')
+
+
+t1 = Hello()
+t2 = Hi()
+
+t1.run()
+t2.run()
 class Parent:
     def phone(self):
         print('nokia')
