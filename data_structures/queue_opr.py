@@ -1,57 +1,54 @@
-# Using List as queues
+# Queue Operation
 
-# It is also possible to use a list as a queue, where the first element added is the first element retrieved
-# (“first-in, first-out”); however, lists are not efficient for this purpose. While appends and pops from the
-# end of list are fast, doing inserts or pops from the
-# beginning of a list is slow (because all of the other elements have to be shifted by one).
-
-# eg:
-# data.pop(0)   -- to pop an element from the front of list, need to pass the index.
-# data.insert(0, object) -- to insert an element to the front of list, need to pass the index.
-
-# >>> data = [4,5,6]
-# >>> data.insert(0, 10)
-# >>> data
-# [10, 4, 5, 6]
-# here when v insert 10 at first index, all other element were shifted by one.
+front = 0
+rear = -1
+q = list()
 
 
-# so here v not use the lists.
+def add_to_queue(size):
+    global rear, front, q
+    # if rear > size:
+    #     return 'queue is full'
+    # else:
+    #     rear += 1
+    #     print(rear)
+    #     q.append(item)
+    # return q
+    if rear > size:
+        return 'Queue Empty'
+    while size - 1 > rear:
+        item = int(input('Enter an item: '))
+        rear += 1
+        q.insert(rear, item)
 
-# To implement a queue, use collections.deque which was designed to have
-# fast appends and pops from both ends. For example:
-
-from collections import deque
-
-queue = deque(['Eric', 'Sule', 'Rodrygo'])
-print(queue)
-print(type(queue))
-
-# now queue is a deque object, not a list object.
-# deque object has methods similar to list
-# use append mthod of deque to add item to queue.
-
-queue.append('Terry')
-queue.append('Graham')
-print(queue)
-# new elements appended to the end of the queue.
-
-# Next to remove the items from the front of the queue.
-# use popleft() method of deque
-# which pops the items from the left of the queue(ie. front).
-
-queue.popleft()
-print(queue)
-
-# again pop from the left of the queue
-queue.popleft()
-print(queue)
+    return q
 
 
-# Appending to the left/front of the queue.
-# use appendleft() method.
-queue.appendleft('Watson')
-print(queue)
+size = int(input('Size: '))
+print(add_to_queue(size))
+
+# Deleting from the Queue
 
 
+front = 0
 
+numbers = [4, 5, 7, 8]
+
+rear = len(numbers) - 1
+
+
+def delete_from_q():
+    global front, numbers, rear
+    if numbers == list():
+        return 'queue is empty'
+    print(numbers)
+    while front <= rear:
+        print(f'Removing {numbers[front]} Element from queue')
+        numbers.remove(numbers[front])
+        print(numbers)
+        rear -= 1
+
+    # return numbers
+
+
+delete_from_q()
