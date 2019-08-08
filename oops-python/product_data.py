@@ -18,6 +18,3 @@ class Payment(Customer, Product):
         # global purchase_list
         new = [(self.name, self.price)]
         return new
-
-
-
