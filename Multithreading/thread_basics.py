@@ -58,7 +58,7 @@ t2.run()
 # when v call the both t1.run() and t2.run(),
 # it creates two threads. for instance t1 and t2.
 # and t1 will print 'Hello' 4 times and t2 prints 'Hi' 4 times
-# bt here it doesnt run as simulataneous
+# bt here it doesnt run as simulataneous or at the same time.
 # for eg:
 # hello
 # hi

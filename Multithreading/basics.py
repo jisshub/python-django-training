@@ -138,8 +138,8 @@ from threading import *
 class Test:
     def m1(self):
         for each in range(3):
-            time.sleep(3)
             print('thread')
+            sleep(2)
 
 
 obj = Test()
@@ -155,32 +155,98 @@ for each in range(5):
 
 # Example_4
 
-
-import time
+from threading import *
+from time import sleep
 
 
 def doubles(numbers):
     for i in numbers:
-        time.sleep(2)
+        sleep(2)
         print('doubles', i ** 2)
 
 
 def squares(numbers):
     for n in numbers:
-        time.sleep(2)
+        sleep(2)
         print('square', n * n)
 
 
 numbers = [2, 3, 4]
-bgntime = time.time()
+# bgntime = time.time()
 t1 = Thread(target=doubles, args=(numbers,))
 t2 = Thread(target=squares, args=(numbers,))
 t1.start()
+sleep(.3)
 t2.start()
 # if v just
 
 t1.join()
 t2.join()
 
-endtime = time.time()
-print('total time', endtime - bgntime)
+print('hello')
+
+##############################################################################
+
+
+from threading import *
+from time import sleep
+
+
+class Doubles(Thread):
+
+    def run(self):
+        numbers = [2, 3, 5]
+        for i in numbers:
+            sleep(2)
+            print('doubles', i ** 2)
+
+
+class Squares(Thread):
+    def run(self):
+        numbers = [2, 3, 5]
+        for n in numbers:
+            sleep(2)
+            print('square', n * n)
+
+
+t1 = Doubles()
+t2 = Squares()
+# numbers = [2, 3, 4]
+
+t1.start()
+sleep(.3)
+t2.start()
+# if v just
+
+t1.join()
+t2.join()
+
+print('hello')
+
+#################################################################33
+
+from threading import *
+from time import sleep
+
+
+def divisible():
+    for each in range(1, 20):
+        if each % 3 is 0:
+            print(f"{each} divisble by 3")
+            sleep(2)
+
+
+def divisibleby5():
+    for each in range(1, 20):
+        if each % 5 is 0:
+            print(f"{each} is divisble by 5")
+            sleep(2)
+
+
+t1 = Thread(target=divisible)
+t2 = Thread(target=divisibleby5)
+
+# divisible()
+t1.start()
+sleep(.4)
+t2.start()
