@@ -86,6 +86,13 @@ print((tday - bday).days)
 
 # in above two cases the output will be a timedelta value.
 
+# Sample Program
+
+import datetime
+
+dt1 = datetime.date(2022, 7, 19)
+dt2 = datetime.date(2019, 5, 23)
+print((dt1 - dt2).days)
 
 ################################
 
@@ -110,5 +117,56 @@ print(dt.time())
 import datetime
 
 dt = datetime.datetime(2019, 3, 23, 3, 45, 50, 340000)
+print(type(dt))
 print(f"""year: {dt.year}\nmoth: {dt.month}\nday: {dt.day}
         \nhour:{dt.hour}\nminute: {dt.minute}\nseconds: {dt.second}\nmicroseconds: {dt.microsecond}""")
+
+# usin time delta with datetime
+# doiung operations b/w datetime and timedelta objects
+import datetime
+
+dt = datetime.datetime(2018, 12, 23, 8, 50, 20, 150000)
+delta = datetime.timedelta(days=20, seconds=20, microseconds=300000, hours=5, minutes=34)
+current = dt - delta
+print(type(delta))
+print(delta)
+print(type(dt))
+print(dt)
+print(type(current))
+print(current)
+
+# DATETIME - TIMEDELTA = DATETIME
+# DATETIME + TIMEDELTA = DATETIME
+# here, datetime - timedelta gives a datetime object
+# always keep the keyword arguments of timedelta in this specific order.
+# if changed may not get the required output.
+
+
+# Example
+import datetime
+
+dt = datetime.datetime(2019, 3, 4, 5, 30, 2, 120000)
+delta = datetime.timedelta(days=35, seconds=12, microseconds=400000, hours=6, minutes=50)
+new_datetime = dt + delta
+print(new_datetime)
+
+# Operations on two Datetime objects.
+
+import datetime
+
+dt1 = datetime.datetime(2022, 7, 19, 10, 20, 30, 200000)
+dt2 = datetime.datetime(2019, 5, 23, 5, 30, 10, 300000)
+print(dt1 - dt2)
+
+
+import datetime
+
+dt1 = datetime.datetime(2022, 7, 19, 10, 20, 30, 200000)
+dt2 = datetime.datetime(2019, 5, 23, 5, 30, 10, 300000)
+print((dt1 - dt2).days)
+
+# here we get different b/w these two datetime objects in the form of timedelta.
+
+
+
+
