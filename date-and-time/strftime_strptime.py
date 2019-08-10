@@ -66,11 +66,15 @@ print(convert_me('April 12, 2017'))
 class Date:
     def convert_me(self, y, m, d):
         date = datetime.date(y, m, d)
-        return date.strftime('%B %d, %Y')
+        new = date.strftime('%B %d, %Y')
+        with open('string_date.txt', 'w') as file:
+            file.write(new)
 
     def convert_meee(self, fmt_date):
         new_dt = datetime.datetime.strptime(fmt_date, '%B %d, %Y').date()
-        print(new_dt)
+        dt = str(new_dt)
+        with open('date.txt', 'w') as file2:
+            file2.write(dt)
 
 
 d1 = Date()
