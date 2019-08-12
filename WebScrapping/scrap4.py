@@ -18,3 +18,7 @@ vid_id = src.split('/')[4]
 # now again split based on '?' and access the index 0.
 vid_id = vid_id.split('?')[0]
 print(vid_id)
+
+# now we can create a youtube link with that id.
+url = f'https://youtube.com/watch?v={vid_id}'
+print(url)
