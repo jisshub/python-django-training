@@ -1,4 +1,5 @@
 from bs4 import BeautifulSoup
+from csv import writer
 import requests
 
 source = requests.get('https://coreyms.com').text
@@ -17,7 +18,9 @@ print('Summary')
 print('---------')
 for article in soup.find_all('article'):
     p = article.find('div', class_='entry-content').p.text
-    print(p)
+    p = str(p)
+    smry = p.split(',')[1].split('.')[0]
+    print(smry)
 
 print('\n')
 print('Youtube Link')
@@ -42,15 +45,27 @@ for article in soup.find_all('article'):
     print(author)
 
 print('\n')
-
+print('Tags')
+print('------------------')
 for article in soup.find_all('article'):
     link = article.find_all('span', class_='entry-categories')
     for each in link:
         each = str(each)
         new = each.split(',')
-        for i in new:
-            soup = BeautifulSoup(i, 'lxml')
-        for span in soup.find_all('a'):
-            first = span.text
-            # second = span.find('a').text
-            print(first)
+    for i in new:
+        soup = BeautifulSoup(i, 'lxml')
+        # print(soup)
+    for span in soup.find_all('a'):
+        text = span.text
+        print(text)
+        # print(span.a.text)
+    #         first = span.text
+    #         # second = span.find('a').text
+    #         print(first)
+
+with open('web_info.csv', 'w') as csv_file:
+    write_obj = writer(csv_file)
+    write_obj.writerow(['Headlines', 'Summary', 'Youtube URL', 'Date & Time', 'Author', 'Tags'])
+    # write_obj.next()
+    for each in write_obj:
+        write_obj.writerow()
