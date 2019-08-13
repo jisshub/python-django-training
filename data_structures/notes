@@ -1,0 +1,3 @@
+private methods are specified with _ at begining of method
+that method is only accessible inside the class
+cant call it using an object
