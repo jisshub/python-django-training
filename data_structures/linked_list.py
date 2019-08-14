@@ -28,7 +28,7 @@ class Linkedlst:
             elements.append(cur_node.data)
         print(elements)
 
-    def search(self, data1) :
+    def search(self, data1):
         cur_node = self.head
         self.head.data = data1
         flag = 0
