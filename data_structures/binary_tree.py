@@ -65,8 +65,8 @@ class Binary:
             return True
         elif cur_node.value > value and cur_node.left_child is not None:
             return self._search_tree(value, cur_node.left_child)
-        # elif cur_node.value < value and cur_node.right_child is not None:
-        #     return self._search_tree(value, cur_node.right_child)
+        elif cur_node.value < value and cur_node.right_child is not None:
+            return self._search_tree(value, cur_node.right_child)
         return False
 
 
