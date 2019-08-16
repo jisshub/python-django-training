@@ -1,3 +1,9 @@
+# Problem Description
+# -----------------------
+
+'https://www.hackerrank.com/challenges/bon-appetit/problem'
+
+
 def bonappetite(bill):
     k = int(input('Enter item not wanted by Anna: '))
     orig_bill = []
