@@ -2,3 +2,21 @@ body
 {
     background: grey;
 }
+div.box-1
+{
+    background: blue;
+    border: solid red 5px;
+    text-align: center;
+    width: 500px;
+}
+
+p
+{
+    color: purple;
+}
+
+span
+{
+    color: orange;
+    font-size: 30px;
+}

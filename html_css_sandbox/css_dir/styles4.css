@@ -1,0 +1,13 @@
+.box-1 li.first-list
+{
+    color: blue
+}
+.box-1 li#bord
+{
+    border: solid 2px #333;
+
+}
+.box-1 li.sec-list
+{
+    color: red;
+}

@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
+
+h1
+{
+    font-family: Arial;
+    font-style: italic;
+}
+p
+{
+    font-family: 'Indie Flower', cursive;
+    font-style: bold;
+    font-size: 30px;
+}

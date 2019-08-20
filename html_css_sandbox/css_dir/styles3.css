@@ -1,0 +1,48 @@
+
+
+*
+{
+
+}
+
+.secondDiv
+{
+    background: purple;
+    padding: 20px;
+    width: 300px;
+}
+.firstDiv p{
+    background: red;
+    color: green;
+}
+#singledout
+{
+    text-align: center;
+    text-decoration: underline;
+
+}
+
+
+ul
+{
+
+      border: 1px solid grey;
+      background: #FDE1E7;
+      list-style: none;
+
+}
+li
+{
+  line-height: 2;
+
+
+}
+li a{
+    text-decoration: none;
+    color: black;
+}
+
+a#sec-link
+{
+    color:red;
+}

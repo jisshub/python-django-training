@@ -1,0 +1,23 @@
+*
+{
+    box-sizing: border-box
+}
+.box-1
+{
+    border: solid green 2px;
+    padding: 20px;
+    margin: 30px auto;
+    background: #94D7D6;
+    color: #013341;
+    width: 30%;
+}
+
+.box-2
+{
+    border: solid blue 2px;
+    padding: 20px;
+    margin: 50px auto;
+    background: #93B4CD;
+    color: #410133;
+    width: 30%;
+}
