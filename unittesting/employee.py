@@ -18,3 +18,5 @@ class Employee:
     def apply_raise(self):
         self.pay = self.pay * self.pay_raise
         return self.pay
+
+# here v use property decorator bfore avery method so v can call them as an attribute.
