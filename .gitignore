@@ -13,3 +13,6 @@ code-snippets/sample_dir/movies_data_corrected_new
 !scrap_file.csv
 article1.html
 article2.html
+*.pyc
+__name__/__pycache__/first.cpython-37.pyc
+
