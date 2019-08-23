@@ -30,4 +30,11 @@ finally:
     print('hello')
 
 
+def division(a, b):
+    try:
+        return a / b
+    except Exception as err:
+        print(err.args)
 
+
+print(division(4, 0))

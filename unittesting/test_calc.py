@@ -18,3 +18,4 @@ if __name__ == '__main__':
 # this condition will always b executed as true and the following code will execute all
 # the test in the file.
 
+# in case a test fails an assertion error is raised.

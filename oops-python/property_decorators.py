@@ -55,6 +55,7 @@ class Employee:
     def email(self):
         return f"{self.first}{self.last}" + '@' + 'gmail.com'
 
+    @property
     def full_name(self):
         return f"{self.first} {self.last}"
 

@@ -6,8 +6,20 @@ def multiply(a, b):
     return a * b
 
 
+def subtract(a, b):
+    return a - b
+
+
 def division(a, b):
+    if b == 0:
+        raise ZeroDivisionError
     return a / b
+
+
+def modulo(a, b):
+    if b == 0:
+        raise ZeroDivisionError
+    return a % b
 
 #
 # if __name__ == '__main__':
