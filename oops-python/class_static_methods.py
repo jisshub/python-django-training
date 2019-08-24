@@ -17,7 +17,7 @@ class Student:
     @classmethod
     def info(cls):
         cls.institute = 'Steps'
-        # print(cls.course)
+
         return cls.institute
 
     def change_course(self):

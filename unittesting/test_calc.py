@@ -11,6 +11,9 @@ class TestCalc(unittest.TestCase):
         result = calc.multiply(10, 20)
         self.assertNotEqual(result, 300)
 
+    def test_division(self):
+        self.assertEqual(calc.division(30, 10), 3)
+
 
 if __name__ == '__main__':
     unittest.main()
