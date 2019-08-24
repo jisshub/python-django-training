@@ -46,6 +46,7 @@ if __name__ == '__main__':
     unittest.main()
 
 # here  v text whether value of apply_raise and pay are equal.
+# here each test runs in isolation, so for each test have to create objects gain and gain
 # problem with the code is, for each test v create same object again and again
 # NO DRY PRINCIPLE HERE
 # check test_employee2.py
