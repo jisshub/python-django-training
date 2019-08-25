@@ -38,9 +38,6 @@ class Three(One, Two):
         print('sds')
 
 
-
-
-
 class One:
     def m1(self):
         print('d')
