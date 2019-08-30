@@ -1,0 +1,42 @@
+
+table {
+    max-width: 420px;
+    max-height: 420px;
+    width: 85vw;  /* 85% of the viewport (body) width */
+    height: 85vw;
+    border-spacing: 4px 2px;  /* Space between cells */
+  }
+  td {
+    padding: 0;
+    width: 33%;  /* Every cell should be 1/3 of table height (and width) */
+    height: 33%;
+  }
+  .cell {
+    font-size: 3.4em;
+    font-size: 16vmin;  /* Responsive font size! Awesome! */
+    height: 100%;  /* Fill the container (td) */
+    width: 100%;
+  }
+  .wincell {
+    background-color: #c88;  /* Red background to highlight the "winning" line */
+  }
+  .player-two {
+    color: #933;
+  }
+  
+  /****** BUTTONS ******/
+  
+  
+  button {
+    cursor: pointer;  /* Visually show that you can interact with the button */
+    border: none;  /* Hides default border (and color, for some reason */
+    color: #333;
+  }
+  
+  #restart {
+    font-size: 1.2em;
+    padding: 5px 10px;
+    /* Center horizontally */
+    margin: 1rem 8rem;
+    display: block;
+  }
